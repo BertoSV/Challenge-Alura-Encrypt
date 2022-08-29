@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="javascript.js"></script>
+    <title>Challenge Alura - Encriptador</title>
+</head>
+<body id="fondo" background="Images/fondo2.jpeg">
+    
+    <div class="cajaPrincipal">
+
+        <div class="logo">
+            <img class="logoImg" src="Images/aluralatam.jpg" alt="logoAlura">
+            <h1 class="title">Encriptador de Texto</h1>
+        </div>
+            
+        <div class="left">
+            <input class="text-input" id="inputText" type="text" placeholder="Ingrese el texto aqui">
+        </div>
+
+        <div class="right">
+            <img id="imgDer" src="Images/mensaje.svg" alt="logo del Mensaje">
+            <h1 id="texto">Ningun mensaje fue encontrado</h1>
+            <textarea id="texto2" name="name" rows="5" cols="40">Ingrese el texto que desea encriptar o desencriptar</textarea>
+            <button type="button" id="btn-copiar" onclick="copy()">Copiar</button>
+        </div>
+
+        <div class="leftButton">
+            <p id="leyenda">* Solo letras minusculas, sin acentos y sin caracteres especiales</p>
+            <button type="button" id="btn-encriptar" onclick = "encrypt()">Encriptar</button>
+            <button type="button" id="btn-desencriptar" onclick = "decrypt()">Desencriptar</button>
+        </div>
+
+    </div>
+    <footer class="copyright">
+        <p>&copy BertoSV 2022</p>
+        <p>Derechos reservados</p>
+</body>
+</html>
